@@ -1,275 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sathish B – Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      display: flex;
-      justify-content: center;
-      padding: 24px;
-    }
-    .page {
-      max-width: 920px;
-      width: 100%;
-      background: #020617;
-      border-radius: 24px;
-      padding: 32px 28px 40px;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.6);
-      border: 1px solid rgba(148,163,184,0.25);
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      border-bottom: 1px solid rgba(148,163,184,0.4);
-      padding-bottom: 16px;
-      margin-bottom: 24px;
-    }
-    .name-block h1 {
-      font-size: 30px;
-      font-weight: 700;
-    }
-    .name-block h2 {
-      font-size: 16px;
-      font-weight: 500;
-      color: #38bdf8;
-      margin-top: 4px;
-    }
-    .contact {
-      text-align: right;
-      font-size: 13px;
-      color: #cbd5f5;
-    }
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    .tagline {
-      margin-bottom: 20px;
-      font-size: 13px;
-      color: #cbd5f5;
-    }
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-    .badge {
-      font-size: 11px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(56,189,248,0.5);
-      background: rgba(15,23,42,0.8);
-      color: #e0f2fe;
-    }
-    .section {
-      margin-bottom: 18px;
-    }
-    .section-title {
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #9ca3af;
-      margin-bottom: 8px;
-    }
-    .item {
-      margin-bottom: 10px;
-    }
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      margin-bottom: 2px;
-    }
-    .item-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: #e5e7eb;
-    }
-    .item-meta {
-      font-size: 12px;
-      color: #9ca3af;
-    }
-    .item-sub {
-      font-size: 13px;
-      color: #cbd5f5;
-      margin-bottom: 4px;
-    }
-    ul {
-      margin-left: 16px;
-      margin-top: 4px;
-      font-size: 13px;
-      color: #d1d5db;
-    }
-    li {
-      margin-bottom: 3px;
-    }
-    .two-col {
-      display: grid;
-      grid-template-columns: 2.1fr 1.2fr;
-      gap: 18px;
-      margin-top: 10px;
-    }
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      font-size: 12px;
-    }
-    .pill {
-      padding: 4px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(148,163,184,0.6);
-    }
-    @media (max-width: 720px) {
-      .page { padding: 20px 16px 28px; }
-      .header { flex-direction: column; text-align: left; }
-      .contact { text-align: left; }
-      .two-col { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-  <main class="page">
-    <!-- HEADER -->
-    <header class="header">
-      <div class="name-block">
-        <h1>Sathish B</h1>
-        <h2>Cash Application Analyst | Accounting & Finance</h2>
-      </div>
-      <div class="contact">
-        <div>Chennai, India</div>
-        <div><a href="mailto:bsathish2671@gmail.com">bsathish2671@gmail.com</a></div>
-        <div>+91-XXXXXXXXXX</div>
-        <div><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></div>
-        <div><a href="https://www.linkedin.com/in/your-link" target="_blank">linkedin.com/in/your-link</a></div>
-      </div>
-    </header>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sathish B – Resume</title>
+<style>
+  :root{
+    --bg:#071024; --card:#071428; --muted:#9aa6bf; --accent:#38bdf8;
+    --glass: rgba(255,255,255,0.04);
+    --max-width: 980px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:linear-gradient(180deg,#020617 0%, #071024 100%); color:#e6eef8;
+    display:flex; align-items:flex-start; justify-content:center; padding:32px;
+  }
+  .page{
+    width:100%; max-width:var(--max-width); background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:18px; padding:28px; box-shadow:0 20px 50px rgba(2,6,23,0.7); border:1px solid rgba(148,163,184,0.06);
+    overflow:hidden;
+  }
 
-    <p class="tagline">
-      B.Com Accounting & Finance graduate with experience in cash application and HighRadius, 
-      handling AR, reconciliations, and stakeholder communication. Known for quick learning, 
-      ownership, and consistent performance.
-    </p>
-
-    <div class="badge-row">
-      <span class="badge">Cash Application</span>
-      <span class="badge">Accounts Receivable</span>
-      <span class="badge">HighRadius (2+ yrs)</span>
-      <span class="badge">MS Excel</span>
-      <span class="badge">US GAAP Basics</span>
-    </div>
-
-    <!-- BODY -->
-    <section class="two-col">
-      <!-- LEFT COLUMN -->
-      <div>
-        <div class="section">
-          <div class="section-title">Experience</div>
-
-          <div class="item">
-            <div class="item-header">
-              <span class="item-title">Cash Application Analyst</span>
-              <span class="item-meta">Month YYYY – Present</span>
-            </div>
-            <div class="item-sub">Company Name – Location</div>
-            <ul>
-              <li>Process customer payments (lockbox, ACH, wire, etc.) and apply them against open invoices in ERP.</li>
-              <li>Work with HighRadius (approx. 70% automation) and manually validate remaining items for accuracy.</li>
-              <li>Investigate unapplied / short-paid / over-paid items and coordinate with AR / collections / client team.</li>
-              <li>Prepare daily / weekly reports on cash posting status and unapplied cash, ensuring on-time SLAs.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <span class="item-title">Previous Role / Internship (if any)</span>
-              <span class="item-meta">Month YYYY – Month YYYY</span>
-            </div>
-            <div class="item-sub">Company Name – Location</div>
-            <ul>
-              <li>Add 3–4 bullets that show measurable work, ownership, or learning.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-title">Education</div>
-          <div class="item">
-            <div class="item-header">
-              <span class="item-title">B.Com – Accounting & Finance</span>
-              <span class="item-meta">2019 – 2022</span>
-            </div>
-            <div class="item-sub">Mar Gregorious College, Chennai</div>
-          </div>
-          <div class="item">
-            <div class="item-header">
-              <span class="item-title">MBA (Ongoing)</span>
-              <span class="item-meta">Expected 2025</span>
-            </div>
-            <div class="item-sub">Rajalakshmi Engineering College, Thandalam</div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-title">Achievements</div>
-          <ul>
-            <li>Client appreciation award for best performer & quick learner (2023).</li>
-            <li>Appreciation letter for excellent sports performance – Bhaktavatsalam Vidyashram (2018).</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <div>
-        <div class="section">
-          <div class="section-title">Skills</div>
-          <div class="pill-list">
-            <span class="pill">Cash Application</span>
-            <span class="pill">Accounts Receivable</span>
-            <span class="pill">HighRadius</span>
-            <span class="pill">MS Excel (VLOOKUP, Pivot)</span>
-            <span class="pill">SAP / ERP basics</span>
-            <span class="pill">US GAAP basics</span>
-            <span class="pill">Bank Reconciliation</span>
-            <span class="pill">Problem Solving</span>
-            <span class="pill">Stakeholder Communication</span>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-title">Projects / Highlights</div>
-          <ul>
-            <li>Supported transition to HighRadius for cash application, validating automation outputs and reporting issues.</li>
-            <li>Handled month-end volume spikes while maintaining SLA and quality standards.</li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <div class="section-title">Languages</div>
-          <ul>
-            <li>English</li>
-            <li>Tamil</li>
-            <li>Hindi</li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <div class="section-title">Interests</div>
-          <ul>
-            <li>Athletics, Cricket, Football</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+  /* Header */
+  .header{display:flex;gap:16px;align-items:center;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid rgba(148,163,184,0.04)}
+  .left{display:flex;gap:14px;align-items:center}
+  .avatar{
+    width:78px;height:78px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7dd3fc);flex:0 0 78px;
+    display:flex;align-items
